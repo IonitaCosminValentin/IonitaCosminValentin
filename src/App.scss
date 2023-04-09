@@ -18,7 +18,7 @@ html {
     width: 100vw;
     height: 100vh;
 
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     .navbar {
       width: 100%;
 
@@ -324,32 +324,32 @@ html {
         }
 
         .youtube-clone {
-          background-image: url('./Components/Assets/youtube.PNG');
+          background-image: url("./Components/Assets/youtube.PNG");
           background-size: cover;
         }
 
         .youtube-clone:hover {
           background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-            url('./Components/Assets/youtube.PNG');
+            url("./Components/Assets/youtube.PNG");
           background-size: cover;
         }
         .amazon-clone {
-          background-image: url('./Components/Assets/amazon.PNG');
+          background-image: url("./Components/Assets/amazon.PNG");
           background-size: cover;
         }
         .amazon-clone:hover {
           background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-            url('./Components/Assets/amazon.PNG');
+            url("./Components/Assets/amazon.PNG");
           background-size: cover;
         }
         .a-star {
-          background-image: url('./Components/Assets/astar.PNG');
+          background-image: url("./Components/Assets/astar.PNG");
 
           background-size: cover;
         }
         .a-star:hover {
           background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-            url('./Components/Assets/astar.PNG');
+            url("./Components/Assets/astar.PNG");
           background-size: cover;
         }
       }

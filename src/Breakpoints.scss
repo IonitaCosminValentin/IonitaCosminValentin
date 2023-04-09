@@ -1,9 +1,81 @@
+$main-color: rgb(202, 142, 14);
+$secondary-color: #cf2158;
+
 @media screen and (max-width: 1366px) {
-  .App {
-    .navbar {
-      .container {
-        width: 80% !important;
-        background-color: red;
+  html {
+    body {
+      #root {
+        .App {
+          .navbar {
+            .container {
+              width: 70%;
+              a {
+                font-size: 16px;
+              }
+              a:hover {
+                color: $secondary-color;
+                font-size: 20px;
+                transition: all 0.1s, color 0.5s;
+              }
+            }
+          }
+
+          .scroll {
+            top: 70px;
+          }
+          .active {
+            top: 150px;
+          }
+          #about {
+            scroll-margin-top: 100px;
+            grid-template-columns: 27% 27%;
+
+            .info,
+            .more-info,
+            .contact {
+              font-size: 18px;
+            }
+            .more-info {
+              width: 100%;
+            }
+          }
+
+          #resume {
+            scroll-margin-top: 100px;
+
+            .education,
+            .experience,
+            .other-strengths {
+              width: 70%;
+            }
+            .bar,
+            .text {
+              width: 50%;
+            }
+          }
+          #projects {
+            scroll-margin-top: 100px;
+            margin-bottom: 150px;
+            .project {
+              flex-direction: column;
+              .container {
+                width: 60vw;
+                min-height: 350px;
+                margin-top: 50px;
+              }
+            }
+          }
+          #contact {
+            scroll-margin-top: 100px;
+            form {
+              width: 50%;
+
+              .message {
+                min-height: 200px;
+              }
+            }
+          }
+        }
       }
     }
   }

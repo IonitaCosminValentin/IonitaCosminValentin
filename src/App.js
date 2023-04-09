@@ -1,5 +1,5 @@
-import './Breakpoints.scss'
 import './App.scss'
+import './Breakpoints.scss'
 import NavBar from './Components/NavBar'
 import Intro from './Components/Intro'
 import About from './Components/About'
