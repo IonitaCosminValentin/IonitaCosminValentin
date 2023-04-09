@@ -51,6 +51,8 @@ const About = () => {
           little things, I was less stressed, more aware, and overall{' '}
           <span>happier</span>.
         </p>
+        <br />
+        <br />
       </div>
       <div className='more-info'>
         <div className='hobbies'>

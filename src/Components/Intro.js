@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import arrow from './arrow.png'
+import arrow from './Assets/arrow.png'
 
 const Intro = () => {
   useEffect(() => {

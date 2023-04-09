@@ -102,6 +102,8 @@ html {
       top: 150px;
       transition: top 1.5s ease;
 
+      cursor: pointer;
+
       img {
         width: 10%;
       }
@@ -111,11 +113,15 @@ html {
       top: 250px;
     }
     #about {
+      scroll-margin-top: 150px;
+
       color: white;
       display: grid;
       grid-template-columns: 20% 20%;
+      column-gap: 20%;
+
       justify-content: center;
-      align-items: start;
+
       row-gap: 50px;
 
       text-indent: 3%;
@@ -142,20 +148,27 @@ html {
         text-indent: 0;
         height: 100%;
         font-size: 18px;
+
+        justify-self: self-end;
         h2 {
           color: $main-color;
         }
       }
       .contact {
-        user-select: text;
-        text-indent: 0;
+        justify-self: self-start;
+
         font-size: 20px;
+        text-indent: 0;
+        user-select: text;
+
         h2 {
           color: $main-color;
         }
       }
     }
     #resume {
+      scroll-margin-top: 150px;
+
       color: white;
       display: grid;
       grid-template-columns: 40% 40%;
@@ -163,6 +176,7 @@ html {
       justify-content: center;
 
       margin-top: 150px;
+      margin-bottom: 50px;
       .color {
         color: $main-color;
       }
@@ -177,7 +191,8 @@ html {
       }
 
       .education,
-      .experience {
+      .experience,
+      .other-strengths {
         width: 30%;
         justify-self: flex-end;
         font-weight: bold;
@@ -190,8 +205,8 @@ html {
       }
       .bar {
         background-color: white;
-        height: 7px;
-        width: 40%;
+        height: 10px;
+        width: 35%;
         border-radius: 10px;
         margin-top: 10px;
       }
@@ -202,7 +217,7 @@ html {
         }
       }
       .text {
-        width: 40%;
+        width: 35%;
         display: flex;
         justify-content: space-between;
       }
@@ -225,8 +240,224 @@ html {
         width: 50%;
       }
 
-      .other-strengths {
-        font-weight: bold;
+      .cv {
+        button {
+          height: 50px;
+          width: 200px;
+          background-color: transparent;
+          outline: none;
+          border: 2px solid $secondary-color;
+
+          color: rgb(223, 223, 223);
+
+          font-size: 14px;
+          font-weight: bold;
+
+          transition: all 0.5s ease;
+        }
+        button:hover {
+          cursor: pointer;
+          background-color: $secondary-color;
+        }
+      }
+    }
+    #projects {
+      scroll-margin-top: 260px;
+
+      margin-top: 200px;
+      margin-bottom: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      h1 {
+        font-size: 40px;
+      }
+      .color {
+        color: $main-color;
+        padding-bottom: 50px;
+      }
+
+      .project {
+        min-width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .container {
+          width: 32%;
+          min-height: 300px;
+          overflow-y: show;
+
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          flex-direction: column;
+
+          button {
+            display: none;
+            background-color: rgba(255, 255, 255, 0.8);
+            border: none;
+            outline: none;
+
+            font-size: 20px;
+            border-radius: 5px;
+
+            width: 150px;
+            height: 70px;
+            cursor: pointer;
+
+            backdrop-filter: blur(2px);
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.411);
+          }
+          button:hover {
+            background-color: rgba(230, 230, 230, 0.5);
+          }
+
+          background-color: rgb(255, 255, 255);
+        }
+        :hover {
+          button {
+            display: block;
+          }
+        }
+
+        .youtube-clone {
+          background-image: url('./Components/Assets/youtube.PNG');
+          background-size: cover;
+        }
+
+        .youtube-clone:hover {
+          background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+            url('./Components/Assets/youtube.PNG');
+          background-size: cover;
+        }
+        .amazon-clone {
+          background-image: url('./Components/Assets/amazon.PNG');
+          background-size: cover;
+        }
+        .amazon-clone:hover {
+          background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+            url('./Components/Assets/amazon.PNG');
+          background-size: cover;
+        }
+        .a-star {
+          background-image: url('./Components/Assets/astar.PNG');
+
+          background-size: cover;
+        }
+        .a-star:hover {
+          background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+            url('./Components/Assets/astar.PNG');
+          background-size: cover;
+        }
+      }
+    }
+    #contact {
+      scroll-margin-top: 200px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+
+      padding-bottom: 150px;
+
+      h1 {
+        font-size: 40px;
+        color: white;
+        span {
+          color: $main-color;
+        }
+      }
+      form {
+        width: 35%;
+        padding-top: 50px;
+
+        input {
+          width: 300px;
+          height: 60px;
+          padding-left: 10px;
+          border-radius: 5px;
+          background-color: #232323;
+
+          border: 2px solid rgb(184, 184, 184);
+          color: white;
+          font-size: 13px;
+        }
+
+        input:hover {
+          border: 2px solid $main-color;
+          transition: all 0.2s ease;
+        }
+        input:focus,
+        .message:focus {
+          border: 2px solid $main-color;
+          transition: all 0.2s ease;
+          outline: none;
+        }
+
+        .container {
+          color: rgb(218, 218, 218);
+          display: flex;
+          flex-direction: column;
+          font-weight: bold;
+          span {
+            margin-bottom: 5px;
+          }
+        }
+
+        .top {
+          display: flex;
+          justify-content: space-between;
+        }
+
+        #message {
+          margin-top: 20px;
+        }
+
+        .message {
+          color: white;
+          background-color: #232323;
+          border: 2px solid rgb(184, 184, 184);
+          border-radius: 5px;
+          padding-left: 5px;
+
+          min-height: 250px;
+          font-size: 15px;
+          font-style: italic;
+        }
+        .message:hover {
+          border: 2px solid $main-color;
+          transition: all 0.2s ease;
+        }
+
+        #button {
+          height: 60px;
+          width: 50%;
+          margin-left: 25%;
+
+          margin-top: 50px;
+
+          background-color: transparent;
+          outline: none;
+          border: 2px solid $secondary-color;
+
+          color: rgb(223, 223, 223);
+
+          font-size: 14px;
+          font-weight: bold;
+
+          transition: all 0.5s ease;
+        }
+        #button:hover {
+          cursor: pointer;
+          background-color: $secondary-color;
+        }
+      }
+      #status {
+        color: $main-color;
+        font-style: italic;
       }
     }
   }

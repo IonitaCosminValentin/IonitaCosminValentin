@@ -1,4 +1,5 @@
 import React from 'react'
+import CV from './Assets/cv.pdf'
 
 const Resume = () => {
   return (
@@ -64,6 +65,7 @@ const Resume = () => {
         <span>Late 2022</span>
         <br /> First time applying for a job
         <br />
+        <br />
       </div>
 
       <div className='skills'>
@@ -111,21 +113,29 @@ const Resume = () => {
           </div>
           <br />
         </div>
-
-        <div className='other-strengths'>
-          <h2 className='color'>Other Strengths</h2>
-          Team player
-          <br />
-          Thinking outside the box
-          <br />
-          Always positive
-          <br />
-          Curious
-          <br />
-          Passionate
-          <br />
-          Dedicated
-        </div>
+      </div>
+      <div className='other-strengths'>
+        <h2 className='color'>Other Strengths</h2>
+        Team player
+        <br />
+        Thinking outside the box
+        <br />
+        Always positive
+        <br />
+        Curious
+        <br />
+        Passionate
+        <br />
+        Dedicated
+      </div>
+      <div className='cv'>
+        <button
+          onClick={() => {
+            window.open(CV)
+          }}
+        >
+          Download CV
+        </button>
       </div>
     </div>
   )

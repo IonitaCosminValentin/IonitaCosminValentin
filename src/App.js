@@ -1,8 +1,11 @@
+import './Breakpoints.scss'
 import './App.scss'
 import NavBar from './Components/NavBar'
 import Intro from './Components/Intro'
 import About from './Components/About'
 import Resume from './Components/Resume'
+import Projects from './Components/Projects'
+import Contact from './Components/Contact'
 
 function App () {
   return (
@@ -11,6 +14,8 @@ function App () {
       <Intro />
       <About />
       <Resume />
+      <Projects />
+      <Contact />
     </div>
   )
 }
