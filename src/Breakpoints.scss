@@ -80,3 +80,97 @@ $secondary-color: #cf2158;
     }
   }
 }
+
+@media screen and (max-width: 810px) {
+  html {
+    body {
+      #root {
+        .App {
+          #about {
+            grid-template-columns: 24% 24%;
+
+            .info,
+            .more-info,
+            .contact {
+              font-size: 16px;
+            }
+          }
+          #resume {
+            .bar,
+            .text {
+              width: 65%;
+            }
+          }
+          #projects {
+            .project {
+              .container {
+                width: 75%;
+                min-height: 310px;
+              }
+            }
+          }
+          #contact {
+            form {
+              width: 80%;
+              margin-bottom: 200px;
+              .top {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 414px) {
+  html {
+    body {
+      #root {
+        .App {
+          .navbar {
+            width: 100vw;
+            .container {
+              width: 90%;
+            }
+          }
+
+          #about {
+            grid-template-columns: 32% 32%;
+
+            h2 {
+              font-size: 20px;
+            }
+            .more-info,
+            .contact {
+              font-size: 15px;
+              text-align: center;
+              justify-self: center;
+            }
+            .more-info {
+              grid-column-start: 1;
+              grid-column-end: 3;
+            }
+            .contact {
+              grid-column-start: 1;
+              grid-column-end: 3;
+            }
+          }
+          #resume {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            .education,
+            .experience,
+            .other-strengths,
+            .skills,
+            .languages {
+              width: 90vw;
+            }
+          }
+        }
+      }
+    }
+  }
+}
