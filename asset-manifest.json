@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/ionitacosminvalentin.github.io/ionitacosminvalentin/static/css/main.eae1daca.css",
+    "main.js": "/ionitacosminvalentin.github.io/ionitacosminvalentin/static/js/main.ebce9dd9.js",
+    "static/media/youtube.PNG": "/ionitacosminvalentin.github.io/ionitacosminvalentin/static/media/youtube.b5e4dd87c8b4ebe428d8.PNG",
+    "static/media/amazon.PNG": "/ionitacosminvalentin.github.io/ionitacosminvalentin/static/media/amazon.e6616dc6a9f7ed2a0cd6.PNG",
+    "static/media/astar.PNG": "/ionitacosminvalentin.github.io/ionitacosminvalentin/static/media/astar.ae4788661b5571c21846.PNG",
+    "static/media/cv.pdf": "/ionitacosminvalentin.github.io/ionitacosminvalentin/static/media/cv.a425c1626611b95cc59d.pdf",
+    "index.html": "/ionitacosminvalentin.github.io/ionitacosminvalentin/index.html",
+    "static/media/circle.svg": "/ionitacosminvalentin.github.io/ionitacosminvalentin/static/media/circle.6540b53eb2317fd8af7a.svg",
+    "main.eae1daca.css.map": "/ionitacosminvalentin.github.io/ionitacosminvalentin/static/css/main.eae1daca.css.map",
+    "main.ebce9dd9.js.map": "/ionitacosminvalentin.github.io/ionitacosminvalentin/static/js/main.ebce9dd9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eae1daca.css",
+    "static/js/main.ebce9dd9.js"
+  ]
+}
