@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import arrow from './Assets/arrow.png'
+import { motion as m, spring } from 'framer-motion'
 
 const Intro = () => {
   useEffect(() => {
@@ -14,13 +15,25 @@ const Intro = () => {
   }, [])
   return (
     <div id='intro'>
-      <div className='container'>
+      <m.div
+        className='container'
+        initial={{ fontSize: 0, opacity: 0 }}
+        whileInView={{ fontSize: '100%', opacity: 1 }}
+        transition={(spring, { delay: 0.2 })}
+      >
         <h3>Welcome,</h3>
 
-        <span id='name'>I'm Vali.</span>
+        <m.span
+          id='name'
+          initial={{ opacity: 0 }}
+          transition={{ duration: 0.5 }}
+          whileInView={{ opacity: 1 }}
+        >
+          I'm Vali.
+        </m.span>
 
         <span id='title'>Junior Front-End Developer</span>
-      </div>
+      </m.div>
       <div
         className='scroll'
         onClick={() => {

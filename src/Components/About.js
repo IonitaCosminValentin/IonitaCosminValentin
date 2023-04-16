@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { motion as m } from 'framer-motion'
 const About = () => {
   return (
     <div id='about'>
@@ -7,7 +7,12 @@ const About = () => {
         About <span>Me</span>
       </h1>
 
-      <div className='info'>
+      <m.div
+        className='info'
+        initial={{ opacity: 0, size: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
         <p>
           I am a quick and dedicated person, focused on personal and
           professional growth, with an inclination for problem-solving and
@@ -53,8 +58,14 @@ const About = () => {
         </p>
         <br />
         <br />
-      </div>
-      <div className='more-info'>
+        <br />
+      </m.div>
+      <m.div
+        className='more-info'
+        initial={{ translateX: 100, opacity: 0 }}
+        whileInView={{ translateX: 0, opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
         <div className='hobbies'>
           <h2>Passions/Hobbies</h2>
           Coding, Reading,
@@ -70,8 +81,13 @@ const About = () => {
         <span>Age </span>22
         <br />
         <span>Country </span>Romania
-      </div>
-      <div className='contact'>
+      </m.div>
+      <m.div
+        className='contact'
+        initial={{ translateX: -100, opacity: 0, width: '100vw' }}
+        whileInView={{ translateX: 0, opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
         <h2>Contact</h2>
         <br />
         <span>Phone </span>+40 721 732 718
@@ -82,7 +98,7 @@ const About = () => {
         <br />
         <span>Email </span>cosminvalentinionita@gmail.com
         <br />
-      </div>
+      </m.div>
     </div>
   )
 }

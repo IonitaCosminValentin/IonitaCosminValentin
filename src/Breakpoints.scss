@@ -1,4 +1,4 @@
-$main-color: rgb(202, 142, 14);
+$main-color: #ca8e0e;
 $secondary-color: #cf2158;
 
 @media screen and (max-width: 1366px) {
@@ -160,13 +160,124 @@ $secondary-color: #cf2158;
           #resume {
             display: flex;
             flex-direction: column;
-            align-items: flex-end;
+            align-items: center;
+
+            ul {
+              position: relative;
+              left: -6px;
+            }
+
             .education,
             .experience,
-            .other-strengths,
+            .other-strengths {
+              width: 75vw;
+              border-left: 2px solid $secondary-color;
+
+              margin-bottom: 30px;
+              padding-left: 19px;
+            }
+
             .skills,
             .languages {
-              width: 90vw;
+              width: 75vw;
+              border-left: 2px solid $secondary-color;
+              margin-bottom: 30px;
+              padding-left: 5%;
+            }
+            .languages {
+              padding-bottom: 20px;
+            }
+            .other-strengths {
+              padding-bottom: 10px;
+            }
+
+            .bar,
+            .text {
+              width: 100%;
+            }
+          }
+
+          #projects {
+            .project {
+              .container {
+                width: 90vw;
+                min-height: 180px;
+
+                span {
+                  bottom: 30px;
+                }
+              }
+            }
+          }
+
+          #contact {
+            form {
+              width: 80vw;
+              .top {
+                flex-direction: column;
+              }
+
+              input {
+                width: 100%;
+                height: 40px;
+                margin-bottom: 10px;
+              }
+              .message {
+                min-height: 120px;
+              }
+              #button {
+                margin-left: 25%;
+                width: 50%;
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 415px) {
+  html {
+    body {
+      #root {
+        .App {
+          #projects {
+            .project {
+              margin-top: 50px;
+              :hover {
+                button {
+                  z-index: 1;
+                }
+              }
+
+              .youtube-clone:hover {
+                background: linear-gradient(
+                    rgba(0, 0, 0, 0.6),
+                    rgba(0, 0, 0, 0.6)
+                  ),
+                  url('./Components/Assets/youtube.PNG');
+                background-size: cover;
+              }
+
+              .amazon-clone:hover {
+                background: linear-gradient(
+                    rgba(0, 0, 0, 0.6),
+                    rgba(0, 0, 0, 0.6)
+                  ),
+                  url('./Components/Assets/amazon.PNG');
+                background-size: cover;
+              }
+
+              .a-star:hover {
+                background: linear-gradient(
+                    rgba(0, 0, 0, 0.6),
+                    rgba(0, 0, 0, 0.6)
+                  ),
+                  url('./Components/Assets/astar.PNG');
+                background-size: cover;
+              }
             }
           }
         }

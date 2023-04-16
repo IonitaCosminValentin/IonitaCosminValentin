@@ -1,5 +1,6 @@
 import React from 'react'
 import emailjs from '@emailjs/browser'
+import { motion as m } from 'framer-motion'
 
 const Contact = () => {
   const setStatus = string => {
@@ -33,7 +34,12 @@ const Contact = () => {
   }
 
   return (
-    <div id='contact'>
+    <m.div
+      id='contact'
+      initial={{ paddingTop: 500, opacity: 0 }}
+      whileInView={{ paddingTop: [500, 0, 25, 0], opacity: 1 }}
+      transition={{ delay: 0.3 }}
+    >
       <h1>
         Contact <span>Me</span>
       </h1>
@@ -78,7 +84,7 @@ const Contact = () => {
           <input type='submit' value='Send' id='button' />
         </div>
       </form>
-    </div>
+    </m.div>
   )
 }
 

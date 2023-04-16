@@ -1,32 +1,49 @@
 import React from 'react'
 import CV from './Assets/cv.pdf'
+import { motion as m } from 'framer-motion'
 
 const Resume = () => {
   return (
     <div id='resume'>
       <h1 className='color'>Resume</h1>
-      <div className='education'>
+      <m.div
+        className='education'
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
         <h2 className='color'>Education</h2>
         <br />
-        <span>
-          2019 <br />
-          Iordache Golescu, Gaesti{' '}
-        </span>
-        <br />
-        I got my high school diploma in Mechatronics Engineering
-        <br />
-        <br />
-        <span>
-          2021 <br />
-          Iordache Golescu, Gaesti
+        <ul>
+          <li>
+            <span>
+              2019 <br />
+              Iordache Golescu, Gaesti{' '}
+            </span>
+            <br />
+            I got my high school diploma in Mechatronics Engineering
+            <br />
+          </li>
           <br />
-        </span>
-        I got my bachelor's degree
-        <br />
-        <br />
-      </div>
+          <li>
+            <span>
+              2021 <br />
+              Iordache Golescu, Gaesti
+              <br />
+            </span>
+            I got my bachelor's degree
+            <br />
+          </li>
+          <br />
+        </ul>
+      </m.div>
 
-      <div className='languages'>
+      <m.div
+        className='languages'
+        initial={{ translateX: '20%', opacity: 0 }}
+        whileInView={{ translateX: 0, opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
+      >
         <h2 className='color'>Languages</h2>
         <br />
         <div className='text'>
@@ -45,30 +62,50 @@ const Resume = () => {
         <div className='bar'>
           <div className='english-color inner-color'></div>
         </div>
-      </div>
+      </m.div>
 
-      <div className='experience'>
+      <m.div
+        className='experience'
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
         <h2 className='color'>Experience</h2>
-        <br />
-        <span>2020</span>
-        <br /> I got into coding
-        <br />
-        <br />
-        <span>Early 2021</span>
-        <br /> Started learning about web development
-        <br />
-        <br />
-        <span>Late 2021</span>
-        <br /> I started using React for one-page applications
-        <br />
-        <br />
-        <span>Late 2022</span>
-        <br /> First time applying for a job
-        <br />
-        <br />
-      </div>
+        <ul>
+          <br />
+          <li>
+            <span>2020</span>
+            <br /> I got into coding
+          </li>
+          <br />
+          <br />
+          <li>
+            <span>Early 2021</span>
+            <br /> Started learning about web development
+          </li>
+          <br />
+          <br />
+          <li>
+            <span>Late 2021</span>
+            <br /> I started using React for one-page applications
+          </li>
+          <br />
+          <br />
+          <li>
+            <span>Late 2022</span>
+            <br /> First time applying for a job
+          </li>
+          <br />
+          <br />
+        </ul>
+      </m.div>
 
-      <div className='skills'>
+      <m.div
+        className='skills'
+        initial={{ translateX: '-50%', opacity: 0 }}
+        whileInView={{ translateX: 0, opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
+      >
         <h2 className='color'>Skills</h2>
         <br />
         <div className='skill'>
@@ -113,8 +150,13 @@ const Resume = () => {
           </div>
           <br />
         </div>
-      </div>
-      <div className='other-strengths'>
+      </m.div>
+      <m.div
+        className='other-strengths'
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
         <h2 className='color'>Other Strengths</h2>
         Team player
         <br />
@@ -127,8 +169,13 @@ const Resume = () => {
         Passionate
         <br />
         Dedicated
-      </div>
-      <div className='cv'>
+      </m.div>
+      <m.div
+        className='cv'
+        initial={{ translateX: '30%', opacity: 0 }}
+        whileInView={{ translateX: 0, opacity: 1 }}
+        transition={{ duration: 0.5, delay: 1 }}
+      >
         <button
           onClick={() => {
             window.open(CV)
@@ -136,7 +183,7 @@ const Resume = () => {
         >
           Download CV
         </button>
-      </div>
+      </m.div>
     </div>
   )
 }
