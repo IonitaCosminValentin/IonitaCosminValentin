@@ -57,7 +57,7 @@ const Resume = () => {
 
         <div className='text'>
           <span>English</span>
-          <span>Proficent</span>
+          <span>Proficient</span>
         </div>
         <div className='bar'>
           <div className='english-color inner-color'></div>
