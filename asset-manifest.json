@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ionitacosminvalentin/static/css/main.6afcff64.css",
-    "main.js": "/ionitacosminvalentin/static/js/main.829b204c.js",
+    "main.js": "/ionitacosminvalentin/static/js/main.c0b5153e.js",
     "static/media/youtube.PNG": "/ionitacosminvalentin/static/media/youtube.b5e4dd87c8b4ebe428d8.PNG",
     "static/media/amazon.PNG": "/ionitacosminvalentin/static/media/amazon.e6616dc6a9f7ed2a0cd6.PNG",
     "static/media/astar.PNG": "/ionitacosminvalentin/static/media/astar.ae4788661b5571c21846.PNG",
@@ -9,10 +9,10 @@
     "index.html": "/ionitacosminvalentin/index.html",
     "static/media/circle.svg": "/ionitacosminvalentin/static/media/circle.6540b53eb2317fd8af7a.svg",
     "main.6afcff64.css.map": "/ionitacosminvalentin/static/css/main.6afcff64.css.map",
-    "main.829b204c.js.map": "/ionitacosminvalentin/static/js/main.829b204c.js.map"
+    "main.c0b5153e.js.map": "/ionitacosminvalentin/static/js/main.c0b5153e.js.map"
   },
   "entrypoints": [
     "static/css/main.6afcff64.css",
-    "static/js/main.829b204c.js"
+    "static/js/main.c0b5153e.js"
   ]
 }
