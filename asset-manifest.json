@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/ionitacosminvalentin/static/css/main.6afcff64.css",
-    "main.js": "/ionitacosminvalentin/static/js/main.787d001c.js",
-    "static/media/cv.pdf": "/ionitacosminvalentin/static/media/cv.8c4beae6c8c1f06fc2ce.pdf",
+    "main.js": "/ionitacosminvalentin/static/js/main.29b5a155.js",
+    "static/media/cv.pdf": "/ionitacosminvalentin/static/media/cv.30f439beb16a02f85229.pdf",
     "static/media/youtube.PNG": "/ionitacosminvalentin/static/media/youtube.b5e4dd87c8b4ebe428d8.PNG",
     "static/media/amazon.PNG": "/ionitacosminvalentin/static/media/amazon.e6616dc6a9f7ed2a0cd6.PNG",
     "static/media/astar.PNG": "/ionitacosminvalentin/static/media/astar.ae4788661b5571c21846.PNG",
     "index.html": "/ionitacosminvalentin/index.html",
     "static/media/circle.svg": "/ionitacosminvalentin/static/media/circle.6540b53eb2317fd8af7a.svg",
     "main.6afcff64.css.map": "/ionitacosminvalentin/static/css/main.6afcff64.css.map",
-    "main.787d001c.js.map": "/ionitacosminvalentin/static/js/main.787d001c.js.map"
+    "main.29b5a155.js.map": "/ionitacosminvalentin/static/js/main.29b5a155.js.map"
   },
   "entrypoints": [
     "static/css/main.6afcff64.css",
-    "static/js/main.787d001c.js"
+    "static/js/main.29b5a155.js"
   ]
 }
